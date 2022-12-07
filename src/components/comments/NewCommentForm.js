@@ -27,7 +27,7 @@ const NewCommentForm = (props) => {
 
     // send comment to server
 
-    sendRequest({ text: enteredText }, props.quoteId);
+    sendRequest({ commentData: { text: enteredText }, quoteId: props.quoteId });
 
     // sendRequest({ commentData: enteredText, quoteId: props.quoteId });
   };
